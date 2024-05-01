@@ -1,0 +1,31 @@
+{
+  "name": "@repo/db",
+  "version": "0.0.0",
+  "private": true,
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "scripts": {
+    "lint": "eslint . --max-warnings 0",
+    "studio": "drizzle-kit studio --port 4000 --verbose",
+    "generate": "drizzle-kit generate:pg",
+    "pull": "drizzle-kit introspect:pg",
+    "push": "drizzle-kit push:pg"
+  },
+  "devDependencies": {
+    "@repo/eslint-config": "workspace:*",
+    "@repo/typescript-config": "workspace:*",
+    "@types/eslint": "^8.56.7",
+    "@types/node": "^20.12.5",
+    "@types/pg": "^8.11.4",
+    "bun-types": "^1.1.2",
+    "drizzle-kit": "^0.20.14",
+    "eslint": "^8.57.0",
+    "typescript": "^5.4.4"
+  },
+  "dependencies": {
+    "@neondatabase/serverless": "^0.9.0",
+    "drizzle-orm": "^0.30.7",
+    "pg": "^8.11.5"
+  }
+}
