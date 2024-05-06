@@ -1,4 +1,4 @@
-# Schüttflix finder
+# Track finder
 
 ## Get started
 
